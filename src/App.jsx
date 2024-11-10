@@ -3,7 +3,6 @@ import './App.css';
 import CustomToggle from './CustomToggle';
 import Loader from './Loader';
 import Rat from './Rat';
-
 function App() {
   // Managing the toggle state for three buttons
   const [toggleStates, setToggleStates] = useState([true, false, true]);
@@ -50,11 +49,11 @@ function App() {
         
           <div className="grid gap-6 w-full max-w-2xl">
             {/* Item 1 */}
-            <div className={`bg-white rounded-lg shadow-md p-4 ${toggleStates[0] ? 'bg-green-200' : 'bg-red-200'}`}>
+            <div className={`\ rounded-lg shadow-md p-4 ${toggleStates[0] ? 'bg-green-200' : 'bg-red-200'}`}>
               <div className="grid grid-cols-2 items-center gap-4">
                 <button
                   onClick={() => handleClick(0)}
-                  className={`w-12 h-26 rounded-full ${toggleStates[0] ? 'bg-green-500' : 'bg-red-500'}`}
+                  
                 >
                   <CustomToggle toggle={toggleStates[0]} />
                 </button>
@@ -63,11 +62,11 @@ function App() {
             </div>
     
             {/* Item 2 */}
-            <div className={`bg-white rounded-lg shadow-md p-4 ${toggleStates[1] ? 'bg-green-200' : 'bg-red-200'}`}>
+            <div className={` rounded-lg shadow-md p-4 ${toggleStates[1] ? 'bg-green-200' : 'bg-red-200'}`}>
               <div className="grid grid-cols-2 items-center gap-4">
                 <button
                   onClick={() => handleClick(1)}
-                  className={`w-12 h-26 rounded-full ${toggleStates[1] ? 'bg-green-500' : 'bg-red-500'}`}
+                 
                 >
                   <CustomToggle toggle={toggleStates[1]} />
                 </button>
@@ -76,11 +75,11 @@ function App() {
             </div>
     
             {/* Item 3 */}
-            <div className={`bg-white rounded-lg shadow-md p-4 ${toggleStates[2] ? 'bg-green-200' : 'bg-red-200'}`}>
+            <div className={` rounded-lg shadow-md p-4 ${toggleStates[2] ? 'bg-green-200' : 'bg-red-200'}`}>
               <div className="grid grid-cols-2 items-center gap-4">
                 <button
                   onClick={() => handleClick(2)}
-                  className={`w-12 h-26 rounded-full ${toggleStates[2] ? 'bg-green-500' : 'bg-red-500'}`}
+                 
                 >
                   <CustomToggle toggle={toggleStates[2]} />
                 </button>
@@ -88,12 +87,9 @@ function App() {
               </div>
             </div>
           </div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center mt-2">Me Day and Night: Moye moye</h1>
-          <Rat />
           </div>
-
       )}
-   
+
       
     </>
   );

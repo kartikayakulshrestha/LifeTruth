@@ -3,7 +3,7 @@ import React from 'react';
 function CustomToggle({ toggle }) {
   return (
     <div
-      className={`w-40 aspect-video rounded-xl ${toggle ? 'bg-green-400' : 'bg-red-400'} border-4 border-[#121331]`}
+      className={`w-40 aspect-video rounded-xl ${toggle ? 'bg-green-400' : 'bg-red-400'} border-4 border-[#121331] transform rotate-90`}
     >
       <div className="flex h-full w-full px-2 items-center gap-x-2">
         <div className="w-6 h-6 flex-shrink-0 rounded-full border-4 border-[#121331]"></div>
